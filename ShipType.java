@@ -1,5 +1,4 @@
 public enum ShipType {
-    // enum może przyjąć tylko określone (wymienione niżej) wartości. W nawiasie podany jest argument konstruktora
     // CARRIER(5),
     // BATTLESHIP(4),
     // CRUISER(3),

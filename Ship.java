@@ -1,5 +1,5 @@
 public class Ship {
-    // if fields are final and they are that type it is not possible value, does need to be private
+    // final fields, will not be changed
     public final int startRow;
     public final int startCol;
     public final boolean horizontal;
@@ -43,7 +43,6 @@ public class Ship {
         
 
         return positionInRow && positionInCol && shipInRow && shipInCol;
-        // return startRow >= 0 && startCol >= 0 && endRow() < boardSize && endCol() < boardSize;
     }
 
     public boolean containsSquare(int row, int col) {
@@ -63,7 +62,6 @@ public class Ship {
         if (isVertical)
             return true;
 
-            // (!horizontal && col == startCol && row >= startRow && row <= endRow())
         return false;
     }
 

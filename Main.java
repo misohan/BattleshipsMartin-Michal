@@ -15,7 +15,7 @@ public class Main {
                 String line = scanner.nextLine().toLowerCase();
                 
                 int startRow = Integer.parseInt(line.substring(1, 2));
-                int startCol = line.charAt(0) - 'a'; 
+                int startCol = line.charAt(0) - 'a';
                 boolean horizontal = line.charAt(3) == 'h';
                 ships.add(new Ship(startRow, startCol, horizontal, type));
             }
@@ -24,7 +24,7 @@ public class Main {
 
             System.out.println("Starting game");
 
-            // boolean checkWin = ocean.allShipsSunk();
+            
             while (!ocean.allShipsSunk()) {
                 System.out.println("Enter coordinates (format [A-J][0-9])");
                 String line = scanner.nextLine().toLowerCase();
